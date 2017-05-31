@@ -3,15 +3,17 @@
 
 int main()
 {
-    int temperatura = 1;
+    int temperatura;
     int temp_negativa = 0;
 
-    while (temperatura != 0){
+    do {
         scanf("%d", &temperatura);
 
         if (temperatura < 0)
             temp_negativa++;
-    }
+    } while (temperatura != 0);
 
     printf("%d", temp_negativa);
+
+    return 0;
 }
